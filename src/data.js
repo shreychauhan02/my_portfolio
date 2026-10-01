@@ -49,7 +49,7 @@ export const stripNotes = [
   { pre: 'My models generalize.', bold: 'My sleep schedule doesn\'t.', color: 'aqua', rot: 2 },
   { pre: 'It\'s not overfitting —', bold: 'it\'s commitment.', color: 'cream', rot: -4 },
   { pre: '98% accuracy.', bold: 'The other 2% is my life.', color: 'green', rot: 3 },
-  { pre: 'I speak two languages:', bold: 'Python and sarcasm.', color: 'beige', rot: -2 },
+  { pre: 'B.Tech by schedule.', bold: 'Builder by obsession.', color: 'beige', rot: -2 },
   { pre: 'IND 🇮 · Ahmedabad', bold: null, color: 'violet', rot: -2 },
 ]
 

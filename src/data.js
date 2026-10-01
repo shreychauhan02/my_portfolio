@@ -64,7 +64,6 @@ export const metrics = [
 export const socials = [
   { name: 'LinkedIn', url: profile.linkedin, si: 'linkedin' },
   { name: 'GitHub', url: profile.github, si: 'github' },
-  { name: 'DS Portfolio', url: 'https://www.datascienceportfol.io/gauridsml23', si: 'chartdotjs' },
   { name: 'Email', url: `mailto:${profile.email}`, si: 'gmail' },
 ]
 

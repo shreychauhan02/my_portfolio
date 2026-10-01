@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  color: #222;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  background-color: #fffdf9;
+  background-image: radial-gradient(circle, rgba(34, 34, 34, 0.09) 1.1px, transparent 1.1px);
+  background-size: 26px 26px;
+}
+
+h1, h2, .serif {
+  font-family: Solway, serif;
+}
+
+.hand { font-family: 'Patrick Hand', cursive; }
+.script { font-family: 'Caveat', cursive; }
+
+::selection { background: #CCF9FA; }
+
+/* hand-drawn wobbly border trick */
+.sketch {
+  border: 2px solid #222;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+.sketch-alt {
+  border: 2px solid #222;
+  border-radius: 15px 225px 15px 255px / 255px 15px 225px 15px;
+}
+
+.sticky-note {
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+  font-family: 'Patrick Hand', cursive;
+  box-shadow: 0 14px 28px rgba(80, 60, 20, 0.16);
+}
+.sticky-note:active { cursor: grabbing; }
+
+/* glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px) saturate(1.4);
+  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 0 8px 32px rgba(60, 45, 20, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.section-pad { padding: 110px 0; }
+
+/* "—— About ——" style heading */
+.dash-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+.dash-title::before,
+.dash-title::after {
+  content: '';
+  height: 3px;
+  width: 64px;
+  background: #222;
+  border-radius: 3px;
+}
